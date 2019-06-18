@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kor" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Teak</title>
+
+
+    <style>
+      *{margin:0; padding:0;}
+
+      body{
+        margin: 0 auto;
+        width:960px;
+        background-color: #000000;
+      }
+
+div.container{
+  overflow:hidden;
+}
+      .text{
+        text-align: center;
+        left:50%;
+       top:50%;
+       margin-top: 200px;
+       color:green;
+       font-size: 60px;
+      }
+
+#target_form{
+  text-align:center;
+  margin-top: 200px;
+}
+      </style>
+      <script src="script.js"> </script>
+  </head>
+  <body>
+
+<div class="text" _onclick="document.getElementById('test').style.display = 'block';">  <a onclick="document.getElementById('target_form').style.visibility='visible';">Warning</a></div>
+
+<form id='target_form' onsubmit="return checkForm(this)" style="visibility:hidden;">
+<input type="text" name="id" size="13" maxlength="12" placeholder="아이디" tabindex="10" />
+<input type="password" name="pass" size="13" maxlength="12" placeholder="비밀번호" tabindex="20" />
+<input type="submit" name="reserve" value="로그인" style=" cursor:pointer;" />
+</form>
+
+  </body>
+</html>
